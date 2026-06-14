@@ -16,7 +16,7 @@ const requiredFiles = [
   ".github/ISSUE_TEMPLATE/config.yml",
   ".github/pull_request_template.md",
   "assets/council-logo.png",
-  "assets/readme-overview.svg",
+  "assets/readme-header.png",
   "skills/council/SKILL.md",
   "skills/council/agents/openai.yaml",
   "install-codex.sh",
@@ -68,7 +68,7 @@ assert(frontmatter.length === 2, "SKILL.md frontmatter must only contain name an
 
 const readme = read("README.md");
 for (const text of [
-  "assets/readme-overview.svg",
+  "assets/readme-header.png",
   "Council Skill for AI Coding Agents",
   "https://github.com/saroo98/council-skill.git",
   "https://saroo98.github.io/council-skill/",
@@ -77,14 +77,9 @@ for (const text of [
   assert(readme.includes(text), `README missing expected text: ${text}`);
 }
 
-const readmeOverview = read("assets/readme-overview.svg");
-for (const text of [
-  'height="430"',
-  'id="logoMark"',
-  "Council Skill is a reusable skill",
-]) {
-  assert(readmeOverview.includes(text), `readme-overview.svg missing expected compact-header text: ${text}`);
-}
+const readmeHeader = readFileSync("assets/readme-header.png");
+assert(readmeHeader.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])), "readme-header.png must be a PNG file");
+assert(readmeHeader.length > 50000, "readme-header.png is unexpectedly small");
 
 const openaiYaml = read("skills/council/agents/openai.yaml");
 for (const text of [
@@ -127,6 +122,7 @@ const allTextFiles = execFileSync("git", ["ls-files"], { encoding: "utf8" })
   .split(/\r?\n/)
   .filter(Boolean)
   .filter((file) => !file.startsWith(".git/"))
+  .filter((file) => existsSync(file))
   .filter((file) => !/\.(png|jpg|jpeg|gif|webp)$/i.test(file));
 
 for (const file of allTextFiles) {
