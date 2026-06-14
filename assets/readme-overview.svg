@@ -7,6 +7,14 @@
       <stop offset="0.58" stop-color="#F6F9FD"/>
       <stop offset="1" stop-color="#EEF4FA"/>
     </linearGradient>
+    <linearGradient id="logoDark" x1="130" y1="58" x2="230" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071C3C"/>
+      <stop offset="1" stop-color="#082653"/>
+    </linearGradient>
+    <linearGradient id="logoLight" x1="84" y1="88" x2="278" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6F86A9"/>
+      <stop offset="1" stop-color="#A6B7D0"/>
+    </linearGradient>
     <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(468 150) rotate(15) scale(520 210)">
       <stop stop-color="#FFFFFF"/>
       <stop offset="0.72" stop-color="#FFFFFF" stop-opacity="0.76"/>
@@ -39,7 +47,19 @@
   <path d="M906 42V276H1030" stroke="#D6E0EC" stroke-width="1.5" opacity="0.22"/>
   <path d="M820 52L1058 290" stroke="#E5EBF3" stroke-width="1" opacity="0.32"/>
 
-  <image href="council-logo.png" x="104" y="58" width="176" height="176" preserveAspectRatio="xMidYMid meet" filter="url(#logoShadow)"/>
+  <g id="logoMark" filter="url(#logoShadow)">
+    <circle cx="178" cy="76" r="18" fill="url(#logoDark)"/>
+    <circle cx="178" cy="232" r="18" fill="url(#logoDark)"/>
+    <circle cx="92" cy="154" r="18" fill="#7890B2"/>
+    <circle cx="264" cy="154" r="18" fill="#8CA2BE"/>
+    <path d="M156 102C170 111 186 111 200 102L229 130C212 148 197 164 191 177C183 172 173 172 165 177C159 164 144 148 127 130L156 102Z" fill="url(#logoDark)"/>
+    <path d="M156 206C170 197 186 197 200 206L229 178C212 160 197 144 191 131C183 136 173 136 165 131C159 144 144 160 127 178L156 206Z" fill="url(#logoDark)"/>
+    <path d="M117 112C129 126 142 139 151 153C142 168 129 181 117 196L91 170C103 160 103 148 91 138L117 112Z" fill="url(#logoLight)"/>
+    <path d="M239 112C227 126 214 139 205 153C214 168 227 181 239 196L265 170C253 160 253 148 265 138L239 112Z" fill="url(#logoLight)"/>
+    <circle cx="178" cy="154" r="30" fill="#FFFFFF"/>
+    <circle cx="178" cy="154" r="22" fill="#C9D3E1"/>
+    <circle cx="178" cy="154" r="12" fill="#FFFFFF"/>
+  </g>
 
   <text x="342" y="118" fill="#0B1324" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">Council Skill</text>
   <text x="342" y="176" fill="#526177" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Expert review before coding</text>

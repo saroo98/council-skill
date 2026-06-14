@@ -80,7 +80,7 @@ for (const text of [
 const readmeOverview = read("assets/readme-overview.svg");
 for (const text of [
   'height="430"',
-  'href="council-logo.png"',
+  'id="logoMark"',
   "Council Skill is a reusable skill",
 ]) {
   assert(readmeOverview.includes(text), `readme-overview.svg missing expected compact-header text: ${text}`);
