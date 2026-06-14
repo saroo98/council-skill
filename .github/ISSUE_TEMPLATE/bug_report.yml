@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with the Council skill, install scripts, docs, or site.
+title: "Bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a Council issue. Please include enough detail for the behavior to be reproduced.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect Council to do?
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Codex
+        - Claude Code
+        - Other AI coding agent
+        - Install script
+        - GitHub Pages site
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt or command
+      description: Paste the prompt, install command, or relevant command output. Remove secrets first.
+      render: text
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Include logs, OS details, agent version, or screenshots if relevant.

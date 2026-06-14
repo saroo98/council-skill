@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest a Council skill, documentation, install, or website improvement.
+title: "Feature: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill behavior
+        - Documentation
+        - Install scripts
+        - Examples
+        - GitHub Pages site
+        - Repository maintenance
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example prompts or output
+      description: Add sample prompts or output if the request changes skill behavior.
+      render: markdown

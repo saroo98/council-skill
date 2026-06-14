@@ -14,8 +14,11 @@ Run a practical expert council before implementation, refactoring, redesign, deb
 - Do not debate endlessly. Use one first-pass review and one cross-correction round by default. Add a second critique/correction round only when the first round exposes a serious unresolved conflict.
 - Do not let the experts agree too quickly. Each expert should name at least one risk, weakness, or missing consideration unless the task is genuinely trivial.
 - Prefer the simplest solution that satisfies domain reality, UX quality, engineering maintainability, and verification.
+- Keep each recommendation field concise: one or two concrete sentences is usually enough. Prefer specifics over breadth.
 - If the user does not name the specialized industry and it is not obvious, ask one short clarification question unless the user requested immediate action. If immediate action is requested, infer the domain from context and proceed while labeling the assumption.
 - Verify claims against available evidence. If code, tests, docs, logs, schemas, or package versions are available, inspect the relevant sources before making concrete recommendations. If evidence is missing, say so.
+- For debugging or incident work, identify the reproduction signal, likely fault boundary, smallest diagnostic check, and mitigation or rollback path before recommending a refactor.
+- For regulated, privacy-sensitive, or operationally high-risk domains, explicitly consider permissions, data exposure, auditability, user harm, and rollback. Add a wildcard compliance/privacy specialist only when those concerns materially change the decision.
 
 ## Default Experts
 

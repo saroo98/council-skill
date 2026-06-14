@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Council Skill for Codex, Claude Code, and AI Coding Agents</title>
+    <meta
+      name="description"
+      content="Council is an open-source AI coding skill for Codex, Claude Code, and AI agents. Use /council for expert review before coding, architecture decisions, refactors, redesigns, and debugging."
+    >
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://saroo98.github.io/council-skill/">
+    <meta property="og:title" content="Council Skill for AI Coding Agents">
+    <meta
+      property="og:description"
+      content="A practical expert council protocol for Codex, Claude Code, and AI coding agents."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saroo98.github.io/council-skill/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Council Skill for AI Coding Agents">
+    <meta
+      name="twitter:description"
+      content="Use /council for practical multi-role expert review before software implementation."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Council Skill",
+        "description": "A reusable AI coding skill for Codex, Claude Code, and AI coding agents that runs a practical expert review before implementation, refactoring, redesign, debugging, and architecture decisions.",
+        "codeRepository": "https://github.com/saroo98/council-skill",
+        "programmingLanguage": "Markdown",
+        "license": "https://github.com/saroo98/council-skill/blob/main/LICENSE",
+        "runtimePlatform": ["Codex", "Claude Code", "AI coding agents"]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="https://github.com/saroo98/council-skill" aria-label="Council Skill GitHub repository">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Council Skill</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#install">Install</a>
+        <a href="#protocol">Protocol</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="https://github.com/saroo98/council-skill">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Council Skill</h1>
+          <p class="hero-lede">
+            A practical expert-review protocol for Codex, Claude Code, and AI coding agents.
+            Invoke <code>/council</code> before implementation, refactoring, redesign, debugging,
+            or architecture decisions.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/saroo98/council-skill">View on GitHub</a>
+            <a class="button secondary" href="#install">Install the skill</a>
+          </div>
+        </div>
+
+        <aside class="protocol-preview" aria-label="Council output preview">
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre><code>/council
+
+Industry: legal case-management software.
+Task: Review this dashboard architecture.
+
+- Domain/Product Expert
+- Principal UI/UX Designer
+- Principal Software Architect
+- QA/Security/Ops Lead</code></pre>
+        </aside>
+      </section>
+
+      <section class="section" id="protocol">
+        <div class="section-heading">
+          <h2>Structured review before code</h2>
+          <p>
+            Council is not theatrical roleplay or a claim of hidden chain-of-thought.
+            It gives the agent a visible audit trail: assumptions, objections, tradeoffs,
+            implementation plan, and final decision.
+          </p>
+        </div>
+
+        <div class="role-grid">
+          <article>
+            <h3>Domain/Product Expert</h3>
+            <p>Checks real workflows, business rules, user expectations, regulations, and domain edge cases.</p>
+          </article>
+          <article>
+            <h3>Principal UI/UX Designer</h3>
+            <p>Reviews information architecture, accessibility, usability, visual hierarchy, copy, and friction.</p>
+          </article>
+          <article>
+            <h3>Principal Software Architect</h3>
+            <p>Reviews architecture, data flow, APIs, state, maintainability, dependencies, and complexity.</p>
+          </article>
+          <article>
+            <h3>QA/Security/Ops Lead</h3>
+            <p>Reviews tests, regressions, security, privacy, performance, deployment, monitoring, and rollback.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="install">
+        <div>
+          <h2>Install for Codex and Claude Code</h2>
+          <p>
+            The repository includes safe Bash installers for Codex, Claude Code, or both.
+            Existing Council skill folders are backed up before replacement.
+          </p>
+        </div>
+        <div class="install-panel">
+          <pre><code>git clone https://github.com/saroo98/council-skill.git
+cd council-skill
+./install-both.sh</code></pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Use it when the decision has real risk</h2>
+          <p>
+            Council is useful for feature planning, risky refactors, product redesigns,
+            architecture decisions, debugging sessions, and specialized industry workflows.
+          </p>
+        </div>
+        <ul class="use-list">
+          <li>Review an appointment-booking redesign for dental clinic software.</li>
+          <li>Evaluate KYC onboarding changes in fintech before implementation.</li>
+          <li>Challenge dashboard architecture for legal case-management software.</li>
+          <li>Plan a production incident debugging path before refactoring.</li>
+        </ul>
+      </section>
+
+      <section class="section faq" id="faq">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Does Council create real subagents?</summary>
+          <p>No. This repository is an instruction-only skill. It gives one coding agent a structured review protocol.</p>
+        </details>
+        <details>
+          <summary>Is Council a replacement for tests or expert review?</summary>
+          <p>No. It improves review discipline, but users should still verify claims, inspect code, and run relevant checks.</p>
+        </details>
+        <details>
+          <summary>What command invokes the skill?</summary>
+          <p>Use <code>/council</code> in compatible Codex, Claude Code, or AI coding agent environments.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>MIT licensed.</span>
+      <a href="https://github.com/saroo98/council-skill">github.com/saroo98/council-skill</a>
+    </footer>
+  </body>
+</html>

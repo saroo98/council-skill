@@ -1,0 +1,4 @@
+interface:
+  display_name: "Council"
+  short_description: "Expert review before coding"
+  default_prompt: "Use $council to review this plan before implementation."

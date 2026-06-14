@@ -1,5 +1,8 @@
 # Council Skill for AI Coding Agents
 
+[![CI](https://github.com/saroo98/council-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/saroo98/council-skill/actions/workflows/ci.yml)
+[![GitHub Pages](https://github.com/saroo98/council-skill/actions/workflows/pages.yml/badge.svg)](https://github.com/saroo98/council-skill/actions/workflows/pages.yml)
+
 Council is a reusable AI coding skill for Codex, Claude Code, and other AI coding agents. Invoke `/council` to run a practical expert review before implementation, refactoring, redesign, debugging, architecture decisions, or high-stakes product tradeoffs.
 
 Use Council when you want an AI agent to slow down, challenge weak assumptions, and produce a concrete implementation plan before writing code. It is designed for software teams, solo developers, product builders, and agent workflows that need more than a quick answer.
@@ -7,6 +10,8 @@ Use Council when you want an AI agent to slow down, challenge weak assumptions, 
 Council is not four real independent humans and does not create separate agents by default. It is a structured review protocol that makes a coding agent evaluate work through four useful lenses: domain/product reality, UI/UX quality, software architecture, and QA/security/operations.
 
 Repository: [github.com/saroo98/council-skill](https://github.com/saroo98/council-skill)
+
+Website: [saroo98.github.io/council-skill](https://saroo98.github.io/council-skill/)
 
 ## Why Use It
 
@@ -181,3 +186,9 @@ Council improves review discipline, but it does not guarantee correctness. It ca
 Users should verify important claims against source code, logs, tests, schemas, official documentation, and real user workflows. Run the relevant checks before shipping.
 
 Council should not be treated as legal, medical, financial, or compliance authority. For regulated or high-stakes decisions, use it as a preparation aid and get qualified review.
+
+## Contributing And Security
+
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for local checks and contribution guidelines.
+- See [SECURITY.md](SECURITY.md) for private vulnerability reporting guidance.
+- See [docs/forward-tests.md](docs/forward-tests.md) for prompt-level skill validation scenarios.
