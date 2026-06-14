@@ -6,3 +6,4 @@
 - Added instruction-only `council` skill.
 - Added Codex, Claude Code, and combined install scripts.
 - Added usage examples and sample output.
+- Improved README discoverability for Codex, Claude Code, and AI coding agent search queries.

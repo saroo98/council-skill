@@ -1,14 +1,18 @@
-# Council Skill
+# Council Skill for AI Coding Agents
 
-Council is a reusable AI coding skill invoked as `/council`. It gives Codex, Claude Code, and similar coding agents a practical expert review protocol before implementation, refactoring, redesign, debugging, or architecture decisions.
+Council is a reusable AI coding skill for Codex, Claude Code, and other AI coding agents. Invoke `/council` to run a practical expert review before implementation, refactoring, redesign, debugging, architecture decisions, or high-stakes product tradeoffs.
 
-Council is not four real independent humans and does not create separate agents by default. It is a structured review method that forces a coding agent to evaluate a decision through four useful lenses: domain/product reality, UI/UX quality, software architecture, and QA/security/operations.
+Use Council when you want an AI agent to slow down, challenge weak assumptions, and produce a concrete implementation plan before writing code. It is designed for software teams, solo developers, product builders, and agent workflows that need more than a quick answer.
+
+Council is not four real independent humans and does not create separate agents by default. It is a structured review protocol that makes a coding agent evaluate work through four useful lenses: domain/product reality, UI/UX quality, software architecture, and QA/security/operations.
+
+Repository: [github.com/saroo98/council-skill](https://github.com/saroo98/council-skill)
 
 ## Why Use It
 
-Use Council when a change has meaningful product, design, architecture, security, performance, operational, or domain-specific risk. It is meant to catch weak assumptions before code is written and to turn critique into a concrete implementation plan.
+Most AI coding agents can move fast, but speed can hide product, design, architecture, security, performance, and operations risks. Council adds a lightweight review step for decisions that should not be handled as a one-shot prompt.
 
-Council is practical, not philosophical. It should produce specific objections, tradeoffs, affected files, tests to run, rollout notes, and a final decision.
+Council is practical, not philosophical. It should produce specific objections, tradeoffs, affected files, tests to run, rollout notes, and a final decision. It is especially useful when a technically correct solution might still fail in real workflows.
 
 ## When To Use
 
@@ -18,6 +22,8 @@ Council is practical, not philosophical. It should produce specific objections, 
 - Refactoring code with product or operational risk
 - Debugging a tricky issue with unclear root cause
 - Reviewing workflows in specialized industries such as healthcare, legal, finance, education, logistics, retail, or internal operations
+- Asking Codex or Claude Code for a multi-role critique before coding
+- Checking AI-generated implementation plans for missing tests, security issues, rollback gaps, or UX problems
 
 ## When Not To Use
 
@@ -30,7 +36,7 @@ Council is practical, not philosophical. It should produce specific objections, 
 ## Install For Codex
 
 ```bash
-git clone https://github.com/<owner>/council-skill.git
+git clone https://github.com/saroo98/council-skill.git
 cd council-skill
 ./install-codex.sh
 ```
@@ -44,7 +50,7 @@ $HOME/.agents/skills/council
 ## Install For Claude Code
 
 ```bash
-git clone https://github.com/<owner>/council-skill.git
+git clone https://github.com/saroo98/council-skill.git
 cd council-skill
 ./install-claude.sh
 ```
@@ -58,7 +64,7 @@ $HOME/.claude/skills/council
 ## Install Both
 
 ```bash
-git clone https://github.com/<owner>/council-skill.git
+git clone https://github.com/saroo98/council-skill.git
 cd council-skill
 ./install-both.sh
 ```
@@ -100,6 +106,13 @@ Industry: warehouse operations.
 Task: Decide whether to refactor the pick-list allocation flow now or after the inventory sync bug is fixed.
 ```
 
+```text
+/council
+
+Industry: fintech onboarding.
+Task: Review this KYC workflow redesign for product, UX, architecture, security, and rollout risk.
+```
+
 ## Expected Output Shape
 
 Council outputs:
@@ -119,6 +132,47 @@ The final decision ends with:
 - **Blocking questions:** ...
 - **Next action:** ...
 ```
+
+## What The Expert Council Reviews
+
+Council uses four default perspectives:
+
+- **Domain/Product Expert:** Real workflows, business rules, operational constraints, user expectations, and domain-specific edge cases.
+- **Principal UI/UX Designer:** Interaction design, information architecture, accessibility, usability, visual hierarchy, copy, and design quality.
+- **Principal Software Architect:** Architecture, data flow, API design, state management, maintainability, dependencies, implementation complexity, and code quality.
+- **QA/Security/Ops Lead:** Tests, regressions, security, privacy, performance, observability, deployment, rollback, and failure modes.
+
+It may add one temporary specialist only when needed, such as a Data/AI Specialist, Compliance/Privacy Specialist, Growth/Business Specialist, or Content/Localization Specialist.
+
+## Common Search Terms
+
+Council may be useful if you are searching for:
+
+- Codex skill for architecture review
+- Claude Code skill for software planning
+- AI coding agent expert review
+- AI agent council for code review
+- Multi-role critique before coding
+- Software architecture decision prompt
+- AI-assisted product and engineering review
+
+## FAQ
+
+### Is Council a Codex skill?
+
+Yes. Council installs to `$HOME/.agents/skills/council` and can be invoked as `/council` in compatible Codex skill environments.
+
+### Is Council a Claude Code skill?
+
+Yes. Council installs to `$HOME/.claude/skills/council` and can be invoked as `/council` in compatible Claude Code skill environments.
+
+### Does Council create real subagents?
+
+No. This repository is an instruction-only skill. It gives one AI coding agent a structured expert review protocol. It does not create real independent agents unless a separate environment explicitly adds that capability.
+
+### Is Council for code review or planning?
+
+Both. Council is useful before implementation, during architecture decisions, before risky refactors, while debugging unclear issues, and when reviewing product or UX changes before code is written.
 
 ## Safety And Limitations
 
