@@ -15,6 +15,7 @@ const requiredFiles = [
   ".github/ISSUE_TEMPLATE/feature_request.yml",
   ".github/ISSUE_TEMPLATE/config.yml",
   ".github/pull_request_template.md",
+  "assets/council-logo.png",
   "assets/readme-overview.svg",
   "skills/council/SKILL.md",
   "skills/council/agents/openai.yaml",
@@ -76,6 +77,15 @@ for (const text of [
   assert(readme.includes(text), `README missing expected text: ${text}`);
 }
 
+const readmeOverview = read("assets/readme-overview.svg");
+for (const text of [
+  'height="430"',
+  'href="council-logo.png"',
+  "Council Skill is a reusable skill",
+]) {
+  assert(readmeOverview.includes(text), `readme-overview.svg missing expected compact-header text: ${text}`);
+}
+
 const openaiYaml = read("skills/council/agents/openai.yaml");
 for (const text of [
   'display_name: "Council"',
@@ -116,7 +126,8 @@ const allTextFiles = execFileSync("git", ["ls-files"], { encoding: "utf8" })
   .trim()
   .split(/\r?\n/)
   .filter(Boolean)
-  .filter((file) => !file.startsWith(".git/"));
+  .filter((file) => !file.startsWith(".git/"))
+  .filter((file) => !/\.(png|jpg|jpeg|gif|webp)$/i.test(file));
 
 for (const file of allTextFiles) {
   const contents = read(file);
