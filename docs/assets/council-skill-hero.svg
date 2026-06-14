@@ -1,76 +1,77 @@
-<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="967" height="345" viewBox="0 0 967 345" fill="none" xmlns="http://www.w3.org/2000/svg">
   <title>Council Skill</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCFDFF"/>
-      <stop offset="0.62" stop-color="#F9FBFE"/>
-      <stop offset="1" stop-color="#F4F8FC"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="967" y2="345" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FEFFFF"/>
+      <stop offset="0.64" stop-color="#FBFCFE"/>
+      <stop offset="1" stop-color="#F6F9FC"/>
     </linearGradient>
-    <radialGradient id="softGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 168) rotate(18) scale(540 240)">
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(393 145) rotate(17) scale(460 190)">
       <stop stop-color="#FFFFFF"/>
-      <stop offset="0.82" stop-color="#FFFFFF" stop-opacity="0.62"/>
-      <stop offset="1" stop-color="#EAF1F8" stop-opacity="0"/>
+      <stop offset="0.8" stop-color="#FFFFFF" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#EDF3F8" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.85" fill="#D8E0EA" opacity="0.42"/>
+    <pattern id="dots" width="17" height="17" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#D7E0EA" opacity="0.35"/>
     </pattern>
-    <linearGradient id="markTop" x1="188" y1="118" x2="188" y2="220" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#091426"/>
-      <stop offset="1" stop-color="#1C2A40"/>
+    <linearGradient id="darkBody" x1="180" y1="95" x2="180" y2="215" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071226"/>
+      <stop offset="1" stop-color="#26364E"/>
     </linearGradient>
-    <linearGradient id="markLeft" x1="88" y1="188" x2="188" y2="188" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#788BA7"/>
-      <stop offset="1" stop-color="#9AA9BE"/>
-    </linearGradient>
-    <linearGradient id="markRight" x1="288" y1="188" x2="188" y2="188" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8799B4"/>
-      <stop offset="1" stop-color="#C1CCDA"/>
-    </linearGradient>
-    <linearGradient id="markBottom" x1="188" y1="286" x2="188" y2="188" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#26364E"/>
-      <stop offset="1" stop-color="#7A8DA7"/>
+    <linearGradient id="blueBody" x1="70" y1="170" x2="270" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8395AE"/>
+      <stop offset="1" stop-color="#B8C4D3"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="380" rx="15" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="1199" height="379" rx="14.5" stroke="#D9E2EC" stroke-opacity="0.16"/>
-  <rect width="1200" height="380" rx="15" fill="url(#softGlow)"/>
-  <rect x="24" y="28" width="220" height="304" fill="url(#dots)" opacity="0.30"/>
-  <rect x="1046" y="28" width="126" height="300" fill="url(#dots)" opacity="0.12"/>
-  <path d="M112 0L244 132" stroke="#E9EEF5" stroke-width="1" opacity="0.26"/>
-  <path d="M938 58C1009 18 1098 36 1142 102C1184 166 1167 255 1104 315" stroke="#D7E0EB" stroke-width="1.5" opacity="0.14"/>
-  <path d="M1058 48V286H1160" stroke="#D7E0EB" stroke-width="1.5" opacity="0.12"/>
-  <path d="M940 283C1015 282 1078 225 1078 153" stroke="#D7E0EB" stroke-width="1.5" opacity="0.10"/>
-  <g>
-    <path d="M120 188C136 205 158 220 184 228C198 218 210 202 218 188C210 174 198 158 184 148C158 156 136 171 120 188Z" fill="url(#markLeft)"/>
-    <path d="M256 188C240 171 218 156 192 148C178 158 166 174 158 188C166 202 178 218 192 228C218 220 240 205 256 188Z" fill="url(#markRight)"/>
-    <path d="M188 256C205 240 220 218 228 192C218 178 202 166 188 158C174 166 158 178 148 192C156 218 171 240 188 256Z" fill="url(#markBottom)"/>
-    <path d="M188 120C171 136 156 158 148 184C158 198 174 210 188 218C202 210 218 198 228 184C220 158 205 136 188 120Z" fill="url(#markTop)"/>
-    <circle cx="188" cy="84" r="20" fill="#091426"/>
-    <circle cx="84" cy="188" r="19" fill="#8192AD"/>
-    <circle cx="292" cy="188" r="19" fill="#8798B2"/>
-    <circle cx="188" cy="292" r="20" fill="#25354D"/>
-    <circle cx="188" cy="188" r="21" fill="#E7EDF4"/>
-    <circle cx="188" cy="188" r="14" fill="#FFFFFF"/>
-    <circle cx="188" cy="188" r="6" fill="#B9C7D8"/>
-    <path d="M188 164V176M188 200V212M164 188H176M200 188H212" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" opacity="0.96"/>
+
+  <rect width="967" height="345" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="966" height="344" rx="13.5" stroke="#DCE5EF" stroke-opacity="0.13"/>
+  <rect width="967" height="345" rx="14" fill="url(#glow)"/>
+  <rect x="22" y="25" width="205" height="292" fill="url(#dots)" opacity="0.24"/>
+  <rect x="854" y="25" width="96" height="292" fill="url(#dots)" opacity="0.10"/>
+  <path d="M112 0L238 126" stroke="#E8EEF5" stroke-width="1" opacity="0.24"/>
+  <path d="M704 56C773 18 859 36 902 100C942 160 927 245 866 302" stroke="#D7E0EB" stroke-width="1.4" opacity="0.13"/>
+  <path d="M804 48V283H910" stroke="#D7E0EB" stroke-width="1.4" opacity="0.10"/>
+
+  <!-- Council emblem: four balanced perspectives around one center. -->
+  <g transform="translate(0 0)">
+    <circle cx="180" cy="78" r="18" fill="#081426"/>
+    <circle cx="78" cy="173" r="17" fill="#8395AE"/>
+    <circle cx="282" cy="173" r="17" fill="#8A9BB4"/>
+    <circle cx="180" cy="272" r="18" fill="#26364E"/>
+
+    <path d="M111 173L165 124L192 150L170 173L192 196L165 222L111 173Z" fill="url(#blueBody)"/>
+    <path d="M249 173L195 124L168 150L190 173L168 196L195 222L249 173Z" fill="#AEBCCC"/>
+    <path d="M180 236L229 181L203 154L180 177L157 154L131 181L180 236Z" fill="#8799B2" opacity="0.98"/>
+    <path d="M180 110L229 165L203 192L180 169L157 192L131 165L180 110Z" fill="url(#darkBody)"/>
+    <path d="M146 166L180 199L214 166" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+
+    <circle cx="180" cy="173" r="18" fill="#E8EEF5"/>
+    <circle cx="180" cy="173" r="11" fill="#FFFFFF"/>
+    <circle cx="180" cy="173" r="4.5" fill="#B9C7D8"/>
   </g>
-  <text x="342" y="122" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="74" font-weight="800" fill="#0B1426" letter-spacing="-2.7">Council Skill</text>
-  <text x="345" y="176" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="32" font-weight="640" fill="#53637A">Expert review before coding</text>
-  <text x="345" y="219" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23" font-weight="430" fill="#728096">For Codex, Claude Code, and AI coding agents</text>
-  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="620">
-    <rect x="345" y="267" width="154" height="46" rx="10" fill="#FFFFFF" fill-opacity="0.72" stroke="#CBD5E1" stroke-opacity="0.72"/>
-    <path d="M371 288H397M376 288V281H392V288M374 288V303H394V288" stroke="#53637A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="419" y="296" dominant-baseline="middle" fill="#334155">Product</text>
-    <rect x="526" y="267" width="122" height="46" rx="10" fill="#FFFFFF" fill-opacity="0.72" stroke="#BBE7CE" stroke-opacity="0.78"/>
-    <circle cx="556" cy="288" r="7" stroke="#2D8050" stroke-width="1.8"/>
-    <path d="M540 307C543 298 569 298 572 307" stroke="#2D8050" stroke-width="1.8" stroke-linecap="round"/>
-    <text x="594" y="296" dominant-baseline="middle" fill="#2D6A48">UX</text>
-    <rect x="675" y="267" width="216" height="46" rx="10" fill="#FFFFFF" fill-opacity="0.72" stroke="#DCD4F4" stroke-opacity="0.80"/>
-    <path d="M705 286L730 297L705 308L680 297L705 286Z" stroke="#5C4896" stroke-width="1.9" stroke-linejoin="round"/>
-    <path d="M687 312L705 321L723 312" stroke="#5C4896" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="750" y="296" dominant-baseline="middle" fill="#34215D">Architecture</text>
-    <rect x="919" y="267" width="164" height="46" rx="10" fill="#FFFFFF" fill-opacity="0.72" stroke="#F0DCAB" stroke-opacity="0.80"/>
-    <path d="M950 286L966 293V306C966 314 957 320 950 323C943 320 934 314 934 306V293L950 286Z" stroke="#A06A16" stroke-width="1.9" stroke-linejoin="round"/>
-    <text x="990" y="296" dominant-baseline="middle" fill="#80500E">QA/Ops</text>
+
+  <text x="294" y="112" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="800" fill="#0B1426" letter-spacing="-2.4">Council Skill</text>
+  <text x="295" y="163" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="650" fill="#53637A">Expert review before coding</text>
+  <text x="295" y="207" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="430" fill="#728096">For Codex, Claude Code, and AI coding agents</text>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="600">
+    <rect x="246" y="251" width="118" height="43" rx="9" fill="#FFFFFF" fill-opacity="0.72" stroke="#CBD5E1" stroke-opacity="0.72"/>
+    <path d="M266 270H284M270 270V265H280V270M268 270V282H282V270" stroke="#53637A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="298" y="273" dominant-baseline="middle" fill="#334155">Product</text>
+
+    <rect x="386" y="251" width="86" height="43" rx="9" fill="#FFFFFF" fill-opacity="0.72" stroke="#BBE7CE" stroke-opacity="0.78"/>
+    <circle cx="409" cy="269" r="5.3" stroke="#2D8050" stroke-width="1.5"/>
+    <path d="M398 283C402 278 416 278 420 283" stroke="#2D8050" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="435" y="273" dominant-baseline="middle" fill="#2D6A48">UX</text>
+
+    <rect x="494" y="251" width="170" height="43" rx="9" fill="#FFFFFF" fill-opacity="0.72" stroke="#DCD4F4" stroke-opacity="0.80"/>
+    <path d="M518 266L539 275L518 284L497 275L518 266Z" stroke="#5C4896" stroke-width="1.55" stroke-linejoin="round"/>
+    <path d="M505 286L518 292L531 286" stroke="#5C4896" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="557" y="273" dominant-baseline="middle" fill="#34215D">Architecture</text>
+
+    <rect x="687" y="251" width="116" height="43" rx="9" fill="#FFFFFF" fill-opacity="0.72" stroke="#F0DCAB" stroke-opacity="0.80"/>
+    <path d="M708 265L720 270V280C720 286 714 290 708 292C702 290 696 286 696 280V270L708 265Z" stroke="#A06A16" stroke-width="1.55" stroke-linejoin="round"/>
+    <text x="738" y="273" dominant-baseline="middle" fill="#80500E">QA/Ops</text>
   </g>
 </svg>
