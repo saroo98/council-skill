@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/council-skill-hero.svg" alt="Council Skill" width="100%">
+</p>
+
 # Council Skill for AI Coding Agents
 
 [![CI](https://github.com/saroo98/council-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/saroo98/council-skill/actions/workflows/ci.yml)
@@ -113,7 +117,6 @@ Task: Decide whether to refactor the pick-list allocation flow now or after the 
 
 ```text
 /council
-
 Industry: fintech onboarding.
 Task: Review this KYC workflow redesign for product, UX, architecture, security, and rollout risk.
 ```
