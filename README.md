@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/council-skill-hero.svg" alt="Council Skill" width="100%">
+  <img src="assets/readme-overview.svg" alt="Council Skill: expert review before coding for Codex, Claude Code, and AI coding agents">
 </p>
 
 # Council Skill for AI Coding Agents

@@ -12,3 +12,4 @@
 - Added Codex UI metadata in `skills/council/agents/openai.yaml`.
 - Added contribution, security, issue, pull request, and forward-test documentation.
 - Tightened skill guidance for debugging, high-risk domains, and concise output.
+- Added a designed README overview graphic that matches the public GitHub page layout direction.

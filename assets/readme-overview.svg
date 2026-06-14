@@ -1,0 +1,156 @@
+<svg width="1120" height="1360" viewBox="0 0 1120 1360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Council Skill overview</title>
+  <desc id="desc">A designed README overview for Council Skill, showing four expert perspectives, usage reasons, install commands, and invocation.</desc>
+  <defs>
+    <linearGradient id="hero" x1="40" y1="22" x2="1080" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="0.52" stop-color="#F5F8FC"/>
+      <stop offset="1" stop-color="#EEF3F8"/>
+    </linearGradient>
+    <linearGradient id="softBlue" x1="80" y1="520" x2="250" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FAFF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="note" x1="76" y1="1238" x2="1024" y2="1316" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#F3F9FF"/>
+    </linearGradient>
+    <filter id="cardShadow" x="0" y="450" width="1120" height="380" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.08 0 0 0 0 0.13 0 0 0 0 0.22 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+    <pattern id="dots" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#CED8E5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1120" height="1360" fill="#FFFFFF"/>
+
+  <rect x="20" y="18" width="1080" height="360" rx="16" fill="url(#hero)"/>
+  <rect x="20" y="18" width="190" height="360" rx="16" fill="url(#dots)" opacity="0.45"/>
+  <path d="M820 50L1038 267" stroke="#DCE4EE" stroke-width="1.2" opacity="0.35"/>
+  <path d="M880 72C944 28 1012 42 1021 42V306C958 298 907 265 881 214C854 161 840 101 880 72Z" stroke="#CCD7E5" stroke-width="2" opacity="0.55"/>
+  <path d="M907 210C950 184 988 178 1021 167" stroke="#CCD7E5" stroke-width="2" opacity="0.55"/>
+  <path d="M136 22L266 151L136 279L8 151" stroke="#E4EAF2" opacity="0.38"/>
+
+  <g transform="translate(132 76)">
+    <circle cx="76" cy="0" r="15" fill="#101B2E"/>
+    <circle cx="76" cy="150" r="15" fill="#44536D"/>
+    <circle cx="0" cy="75" r="15" fill="#7587A5"/>
+    <circle cx="152" cy="75" r="15" fill="#8BA0BD"/>
+    <path d="M76 22L116 70L76 118L36 70L76 22Z" fill="#111C30"/>
+    <path d="M116 28L150 66L118 104L87 68L116 28Z" fill="#9BAEC9"/>
+    <path d="M36 28L5 66L36 104L65 68L36 28Z" fill="#7387A7"/>
+    <circle cx="76" cy="75" r="16" fill="#FFFFFF"/>
+    <circle cx="76" cy="75" r="9" fill="#B4C1D2"/>
+  </g>
+
+  <text x="340" y="135" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-2">Council Skill</text>
+  <text x="340" y="190" fill="#526177" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Expert review before coding</text>
+  <text x="340" y="235" fill="#6D788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="500">For Codex, Claude Code, and AI coding agents</text>
+
+  <g transform="translate(285 285)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="0" y="0" width="140" height="58" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <path d="M25 23H48V47H25V23Z" stroke="#304C77" stroke-width="2.4"/><path d="M31 23V17H42V23M25 31H48" stroke="#304C77" stroke-width="2.4"/>
+    <text x="58" y="36" fill="#334155">Product</text>
+
+    <rect x="165" y="0" width="98" height="58" rx="12" fill="#FBFEFC" stroke="#D5E3D8"/>
+    <path d="M192 24C192 18 200 18 200 24C200 30 192 30 192 24ZM184 46C186 34 206 34 208 46" stroke="#347A52" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="216" y="36" fill="#2F6B47">UX</text>
+
+    <rect x="292" y="0" width="170" height="58" rx="12" fill="#FFFFFF" stroke="#DDD3EA"/>
+    <path d="M322 20L336 13L350 20L336 27L322 20ZM322 31L336 38L350 31M322 41L336 48L350 41" stroke="#5B3F99" stroke-width="2.4" stroke-linejoin="round"/>
+    <text x="363" y="36" fill="#4D3A78">Architecture</text>
+
+    <rect x="490" y="0" width="132" height="58" rx="12" fill="#FFFDF8" stroke="#E7D7B0"/>
+    <path d="M520 18L537 24V36C537 45 528 50 520 52C512 50 503 45 503 36V24L520 18Z" stroke="#B18020" stroke-width="2.4"/>
+    <text x="550" y="36" fill="#9B7220">QA/Ops</text>
+  </g>
+
+  <text x="80" y="425" fill="#111827" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Council Skill is a reusable skill that brings four expert perspectives together before code is written.</text>
+  <text x="80" y="457" fill="#111827" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">It helps AI agents slow down, challenge assumptions, and produce a concrete implementation plan.</text>
+  <line x1="80" y1="492" x2="1040" y2="492" stroke="#DFE5ED"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="522" width="230" height="270" rx="12" fill="url(#softBlue)" stroke="#DDE5EF"/>
+    <circle cx="132" cy="580" r="34" fill="#E9EFFB"/>
+    <path d="M117 570H147V598H117V570Z" stroke="#31507E" stroke-width="3"/><path d="M124 570V562H140V570M117 580H147" stroke="#31507E" stroke-width="3"/>
+    <text x="100" y="655" fill="#111827" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Domain / Product</text>
+    <text x="100" y="696" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Checks workflows, rules,</text>
+    <text x="100" y="724" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">constraints, expectations,</text>
+    <text x="100" y="752" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">and domain edge cases.</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="330" y="522" width="230" height="270" rx="12" fill="#FFFFFF" stroke="#DDE5EF"/>
+    <circle cx="382" cy="580" r="34" fill="#E7F3EA"/>
+    <path d="M374 574C374 566 390 566 390 574C390 582 374 582 374 574ZM364 603C367 588 397 588 400 603" stroke="#2F7D52" stroke-width="3" stroke-linecap="round"/>
+    <text x="350" y="655" fill="#111827" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">UI / UX</text>
+    <text x="350" y="696" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Reviews flows, hierarchy,</text>
+    <text x="350" y="724" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">accessibility, usability,</text>
+    <text x="350" y="752" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">copy, and design quality.</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="580" y="522" width="230" height="270" rx="12" fill="#FFFFFF" stroke="#DDE5EF"/>
+    <circle cx="632" cy="580" r="34" fill="#F0EAF8"/>
+    <path d="M614 568L632 559L650 568L632 577L614 568ZM614 582L632 591L650 582M614 596L632 605L650 596" stroke="#5B3F99" stroke-width="3" stroke-linejoin="round"/>
+    <text x="600" y="655" fill="#111827" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Architecture</text>
+    <text x="600" y="696" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Checks APIs, data flow,</text>
+    <text x="600" y="724" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">state, maintainability,</text>
+    <text x="600" y="752" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">dependencies, complexity.</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="830" y="522" width="230" height="270" rx="12" fill="#FFFFFF" stroke="#DDE5EF"/>
+    <circle cx="882" cy="580" r="34" fill="#F4EFD9"/>
+    <path d="M882 560L903 568V584C903 595 892 603 882 606C872 603 861 595 861 584V568L882 560Z" stroke="#B18020" stroke-width="3"/>
+    <text x="850" y="655" fill="#111827" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">QA / Security / Ops</text>
+    <text x="850" y="696" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Checks tests, security,</text>
+    <text x="850" y="724" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">privacy, performance,</text>
+    <text x="850" y="752" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">deploy, and rollback.</text>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <path d="M93 853C93 843 101 835 111 835C121 835 129 843 129 853C129 863 121 871 111 871C101 871 93 863 93 853Z" stroke="#111827" stroke-width="3"/><path d="M111 842V853L121 858" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+    <text x="145" y="861" fill="#111827" font-size="22" font-weight="800">Why Use It</text>
+    <line x1="80" y1="886" x2="540" y2="886" stroke="#DFE5ED"/>
+    <text x="95" y="925" fill="#2F7D52" font-size="19" font-weight="800">✓</text><text x="125" y="925" fill="#1F2937" font-size="17" font-weight="500">Better decisions before implementation</text>
+    <text x="95" y="954" fill="#2F7D52" font-size="19" font-weight="800">✓</text><text x="125" y="954" fill="#1F2937" font-size="17" font-weight="500">Fewer reworks and costly pivots</text>
+    <text x="95" y="983" fill="#2F7D52" font-size="19" font-weight="800">✓</text><text x="125" y="983" fill="#1F2937" font-size="17" font-weight="500">Shared review across product, UX, code, ops</text>
+    <text x="95" y="1012" fill="#2F7D52" font-size="19" font-weight="800">✓</text><text x="125" y="1012" fill="#1F2937" font-size="17" font-weight="500">Actionable implementation plan and next step</text>
+
+    <circle cx="598" cy="853" r="18" stroke="#111827" stroke-width="3"/><path d="M598 843V855L607 860" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+    <text x="632" y="861" fill="#111827" font-size="22" font-weight="800">When To Use</text>
+    <line x1="580" y1="886" x2="1040" y2="886" stroke="#DFE5ED"/>
+    <text x="596" y="925" fill="#64748B" font-size="19" font-weight="800">✓</text><text x="626" y="925" fill="#1F2937" font-size="17" font-weight="500">Before starting a feature or project</text>
+    <text x="596" y="954" fill="#64748B" font-size="19" font-weight="800">✓</text><text x="626" y="954" fill="#1F2937" font-size="17" font-weight="500">Before redesigns, refactors, or migrations</text>
+    <text x="596" y="983" fill="#64748B" font-size="19" font-weight="800">✓</text><text x="626" y="983" fill="#1F2937" font-size="17" font-weight="500">When requirements are unclear or changing</text>
+    <text x="596" y="1012" fill="#64748B" font-size="19" font-weight="800">✓</text><text x="626" y="1012" fill="#1F2937" font-size="17" font-weight="500">When quality, safety, or operability matter</text>
+
+    <path d="M101 1070V1092H126V1070M113 1058V1082M105 1074L113 1082L121 1074" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="145" y="1084" fill="#111827" font-size="22" font-weight="800">Install</text>
+    <line x1="80" y1="1110" x2="540" y2="1110" stroke="#DFE5ED"/>
+    <text x="80" y="1144" fill="#1F2937" font-size="17" font-weight="500">One command installs Council for Codex and Claude Code.</text>
+    <rect x="80" y="1170" width="460" height="74" rx="8" fill="#F3F5F8"/>
+    <text x="102" y="1204" fill="#64748B" font-size="17" font-weight="600">1</text><text x="138" y="1204" fill="#111827" font-family="SFMono-Regular, Consolas, monospace" font-size="18" font-weight="600">./install-both.sh</text>
+    <text x="80" y="1280" fill="#1F2937" font-size="17" font-weight="500">Installs into your local skill folders with backups.</text>
+
+    <path d="M590 1066H615V1091H590V1066ZM598 1075L606 1082L598 1089" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="632" y="1084" fill="#111827" font-size="22" font-weight="800">Invocation</text>
+    <line x1="580" y1="1110" x2="1040" y2="1110" stroke="#DFE5ED"/>
+    <text x="580" y="1144" fill="#1F2937" font-size="17" font-weight="500">Run Council from your agent workspace.</text>
+    <rect x="580" y="1170" width="460" height="54" rx="8" fill="#F3F5F8"/>
+    <text x="602" y="1204" fill="#64748B" font-size="17" font-weight="600">1</text><text x="638" y="1204" fill="#111827" font-family="SFMono-Regular, Consolas, monospace" font-size="18" font-weight="600">/council</text>
+    <text x="580" y="1262" fill="#1F2937" font-size="17" font-weight="500">Produces assumptions, objections, synthesis,</text>
+    <text x="580" y="1290" fill="#1F2937" font-size="17" font-weight="500">implementation plan, and final decision.</text>
+  </g>
+
+  <rect x="80" y="1295" width="960" height="56" rx="10" fill="url(#note)" stroke="#BFDBFE"/>
+  <circle cx="112" cy="1323" r="14" stroke="#3B82F6" stroke-width="3"/>
+  <text x="108" y="1329" fill="#3B82F6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">i</text>
+  <text x="148" y="1329" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Output:</text>
+  <text x="216" y="1329" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="500">structured expert review with risks, tradeoffs, tests, rollback, and next action.</text>
+</svg>

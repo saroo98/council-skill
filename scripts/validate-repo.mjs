@@ -15,6 +15,7 @@ const requiredFiles = [
   ".github/ISSUE_TEMPLATE/feature_request.yml",
   ".github/ISSUE_TEMPLATE/config.yml",
   ".github/pull_request_template.md",
+  "assets/readme-overview.svg",
   "skills/council/SKILL.md",
   "skills/council/agents/openai.yaml",
   "install-codex.sh",
@@ -66,6 +67,7 @@ assert(frontmatter.length === 2, "SKILL.md frontmatter must only contain name an
 
 const readme = read("README.md");
 for (const text of [
+  "assets/readme-overview.svg",
   "Council Skill for AI Coding Agents",
   "https://github.com/saroo98/council-skill.git",
   "https://saroo98.github.io/council-skill/",
