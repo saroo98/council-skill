@@ -117,6 +117,7 @@ Task: Decide whether to refactor the pick-list allocation flow now or after the 
 
 ```text
 /council
+
 Industry: fintech onboarding.
 Task: Review this KYC workflow redesign for product, UX, architecture, security, and rollout risk.
 ```
